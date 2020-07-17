@@ -1,13 +1,11 @@
 package edu.bu.met.cs665;
+//import java.util.list;
 
-import edu.bu.met.cs665.example1.Person;
+//import edu.bu.met.cs665.example1.Person;
 import org.apache.log4j.Logger;
 // import org.apache.log4j.PropertyConfigurator;
 
 public class Main {
-
-  private static Logger logger = Logger.getLogger(Main.class);
-
 
   /**
    * A main method to run examples.
@@ -16,29 +14,26 @@ public class Main {
    */
   public static void main(String[] args) {
 
-    // This configuration is for setting up the log4j properties file.
-    // It is better to set this using java program arguments.
-    // PropertyConfigurator.configure("log4j.properties");
+    Shop flowerShop = new Shop("Florals"); // Flower Shop
+    Driver driver1 = new Driver("Driver1"); //drivers
+    Driver driver2 = new Driver("Driver2");
+    Driver driver3 = new Driver("Driver3");
+    Driver driver4 = new Driver("Driver4");
+    Driver driver5 = new Driver("Driver5");
 
-    // Let us create an object of the Main class.
-    Main m = new Main();
+    //register 5 drivers for the flowershop
 
-    logger.info(m.doIt());
+    flowerShop.registerDriver(driver1);
+    flowerShop.registerDriver(driver2);
+    flowerShop.registerDriver(driver3);
+    flowerShop.registerDriver(driver4);
+    flowerShop.registerDriver(driver5);
 
-    logger.trace("Trace Message!");
-    logger.debug("Debug Message!");
-    logger.info("Info Message!");
-    logger.warn("Warn Message!");
-    logger.error("Error Message!");
-    logger.fatal("Fatal Message!");
+    //delivery request
+    flowerShop.sendDeliveryRequest();
 
   }
 
-
-
-  private String doIt() {
-    Person student = new Person("John", "Doe");
-    return student.getLastName() + ',' + student.getLastName();
-  }
 
 }
+
