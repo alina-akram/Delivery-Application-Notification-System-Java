@@ -3,10 +3,11 @@ package edu.bu.met.cs665;
 import java.util.ArrayList;
 
 public class Shop {
+    //Shop is the Observable
     private String shopName;
     private int shopId;
     private String address;
-    private ArrayList<DeliveryRequest> driverList;
+    private ArrayList<DeliveryRequest> driverList; //Observers
 
 
 
@@ -16,9 +17,20 @@ public class Shop {
 
     }
 
+//    @override
     public void registerDriver(DeliveryRequest d){
         driverList.add(d); //adding to driver list
-        System.out.println(d);
+//        System.out.println(d);
+
+    }
+
+    public ArrayList<DeliveryRequest> getDrivers(){
+        return driverList;
+    }
+
+    public void removeDriver(DeliveryRequest d){
+        driverList.remove(d); //adding to driver list
+//
 
     }
 
@@ -28,10 +40,5 @@ public class Shop {
             d.deliveryRequest();
 
         }
-
     }
-
-
-
-
 }

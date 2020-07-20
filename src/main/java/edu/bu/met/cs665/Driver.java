@@ -16,6 +16,10 @@ public class Driver implements DeliveryRequest {  //implement req
 
     }
 
+    public String getName(){
+         return name;
+
+    }
 
 
 }
