@@ -153,4 +153,4 @@ https://coveralls.io/
 mvn -DrepoToken=YOUR-REPO-TOCKEN-ON-COVERALLS  cobertura:cobertura coveralls:report
 ```
 
-
+github repo link: https://github.com/alina-akram/JavaProjectTemplate
