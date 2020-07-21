@@ -1,7 +1,8 @@
+//Assignment2.METCS665.AlinaAkram
 package edu.bu.met.cs665;
 
 public interface DeliveryRequest {
-    //Shop system that processes
+    //Driver system that notifies of Delivery Request
 
     public void deliveryRequest(); //declaring
 
