@@ -26,6 +26,7 @@ How you avoided duplicated code?
 
 Due to the nature of the Observer Pattern, the program avoids constant pulls and pushes, leaving the subjects and observers free from constant interaction. This also helped us avoid unnecessary duplicate code. 
 
+Github Repository Link: https://github.com/alina-akram/met-cs665-assignment-2-alina-akram
 
 # Project Template
 
@@ -153,4 +154,4 @@ https://coveralls.io/
 mvn -DrepoToken=YOUR-REPO-TOCKEN-ON-COVERALLS  cobertura:cobertura coveralls:report
 ```
 
-github repo link: https://github.com/alina-akram/JavaProjectTemplate
+
