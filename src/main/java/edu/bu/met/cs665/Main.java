@@ -1,16 +1,21 @@
-//Assignment2.METCS665.AlinaAkram
+/**
+ * Alina Akram
+ * Course CS-665
+ * Summer 2
+ * Assignment #6
+ * Aug 16, 2020
+ */
 package edu.bu.met.cs665;
-//import java.util.list;
-import org.apache.log4j.Logger;
+
 
 public class Main {
   public static void main(String[] args) {
     //main method to execute functions at run-time
 
-    //Concerete Subjects
-    Shop flowerShop = new Shop("Florals");
-    Shop giftShop = new Shop("Gift Shop");
-    Shop chocolateShop = new Shop("Chocolate Shop");
+    //Concrete Subjects
+    Shop flowerShop = new Shop("Florals ");
+    Shop giftShop = new Shop("Gift Shop ");
+    Shop chocolateShop = new Shop("Chocolate Shop ");
 
     //Concrete observers
     Driver driver1 = new Driver("Adam - Private Driver");
@@ -35,11 +40,11 @@ public class Main {
 
     //delivery request from all three shops
     System.out.println("Flower Shop Delivery: ");
-    flowerShop.sendDeliveryRequest();
+    flowerShop.sendDeliveryRequest( 23,  " 1234 main st");
     System.out.println("Gift Shop Delivery: ");
-    giftShop.sendDeliveryRequest();
+    giftShop.sendDeliveryRequest(24,  " 4321 chestnut st" );
     System.out.println("Chocolate Shop Delivery: ");
-    chocolateShop.sendDeliveryRequest();
+    chocolateShop.sendDeliveryRequest(25,  " 54321 market st");
   }
 }
 

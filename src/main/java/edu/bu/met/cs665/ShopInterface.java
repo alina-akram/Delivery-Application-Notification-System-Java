@@ -1,8 +1,20 @@
-//Assignment2.METCS665.AlinaAkram
+/**
+ * Alina Akram
+ * Course CS-665
+ * Summer 2
+ * Assignment #6
+ * Aug 16, 2020
+ */
 package edu.bu.met.cs665;
 
-public interface ShopInterface {
-    //Shop system that creates the delivery request
+import java.util.ArrayList;
 
-    public void sendDeliveryRequest();
+public interface ShopInterface {
+    //Shop system that creates the delivery request/A6 refactor: added 3 necessary methods
+
+    public void sendDeliveryRequest(int cNumber, String dAddress);
+    public void registerDriver(DriverInterface d);
+    public void removeDriver(DriverInterface d);
+    public ArrayList<DriverInterface> getDrivers();
+
 }

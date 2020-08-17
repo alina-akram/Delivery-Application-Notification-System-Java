@@ -1,4 +1,10 @@
-//Assignment2.METCS665.AlinaAkram
+/**
+ * Alina Akram
+ * Course CS-665
+ * Summer 2
+ * Assignment #6
+ * Aug 16, 2020
+ */
 
 package edu.bu.met.cs665;
 import org.junit.*;
@@ -13,7 +19,7 @@ public class TestSystem {
         //Tests adding/removing of drivers
         Shop flowerShop = new Shop("Florals"); // Flower Shop
 
-        ArrayList<DeliveryRequest> drivers = null;
+        ArrayList<DriverInterface> drivers = null;
         for (int x = 0; x < 5; x++) { // x from 0 to 4
             Driver driver = new Driver("Adam" + x);
             flowerShop.registerDriver(driver);
